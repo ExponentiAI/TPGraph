@@ -5,9 +5,9 @@ Figure 1: Dynamic Spatial-Temporal Traffic Prediction with Attentional Graph Fus
 *The motivation of each layer: we define traffic prediction as a temporal- and spatial- dependencies problem. The temporal and spatial characteristics inside the data should be efficiently utilized. Firstly, considering that traffic data is recorded for up to several months or years, much historical information of days and weeks could provide experience for the model to learn, so we have introduced a multi-scale temporal feature fusion to integrate the historical information as shown in Figure. Subsequently, to introduce the spatial dependencies into the model, we have designed a multi-graph convolution module to extract the spatial feature of the road map. Following, to balance, integrate and fully learn the fused feature, we have proposed a dynamic spatial-temporal prediction module to implement the final learning and predicting process. Finally, to make our model scalable meanwhile balance the accuracy and the computation cost, we have reconstructed our modules to get the final pipeline as shown in the Figure.
 
 ## Code running  
-We have conducted the short-term experiments on Aliyun dataset as the preliminary experiment, and long-term experiments on Aliyun and Pems-bay datasets as the main experiments.
-Here, we provide a code for long-term prediction on Pems-bay dataset. //
-Firstly, please unzip the pems-bay file.//
+We have conducted the short-term experiments on Aliyun dataset as the preliminary experiment, and long-term experiments on Aliyun and Pems-bay datasets as the main experiments.<br>
+Here, we provide a code for long-term prediction on Pems-bay dataset. <br>
+Firstly, please unzip the pems-bay file.<br>
 The model file is TPGraph.py. You can run the code by running the main_pems.py. Meanwhile, our best result is recorded in BEST_REC.
 
 ## Running example on  Aliyun dataset
