@@ -7,7 +7,7 @@ Figure 1: Dynamic Spatial-Temporal Traffic Prediction with Attentional Graph Fus
 ## Code running  
 We have conducted the short-term experiments on Aliyun dataset as the preliminary experiment, and long-term experiments on Aliyun and Pems-bay datasets as the main experiments.<br>
 Here, we provide a code for long-term prediction on Pems-bay dataset. <br>
-Firstly, please unzip the pems-bay file.<br>
+Firstly, please unzip the pems-bay file inside the directory data.<br>
 The model file is TPGraph.py. You can run the code by running the main_pems.py. Meanwhile, our best result is recorded in BEST_REC.
 
 ## Running example on  Aliyun dataset
