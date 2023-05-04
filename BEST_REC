@@ -1,0 +1,87 @@
+DEVICE='cuda:0', SE_file='./data/SE(PeMS).txt', batch_size=16, decay_epoch=5, drop=0, embed_size=64, gamma=0.6, heads=8, learning_rate=0.001, log_file='./data/log', max_epoch=100, model_file='./data/ST_PEMS.pkl', num_day=3, num_his=12, num_layers=1, num_pred=12, num_week=3, patience=20, shuffle=True, test_ratio=0.2, time_slot=5, traffic_file='./data/pems-bay.h5', train_ratio=0.7, val_ratio=0.1
+loading data...
+trainX: (torch.Size([36458, 12, 325]), torch.Size([36458, 3, 325]), torch.Size([36458, 3, 325]))		 trainY: torch.Size([36458, 12, 325])
+valX:   (torch.Size([5189, 12, 325]), torch.Size([5189, 3, 325]), torch.Size([5189, 3, 325]))		valY:   torch.Size([5189, 12, 325])
+testX:   (torch.Size([10400, 12, 325]), torch.Size([10400, 3, 325]), torch.Size([10400, 3, 325]))		testY:   torch.Size([36458, 12, 325])
+mean:   62.7354		std:   9.4388
+data loaded!
+compiling model...
+trainable parameters: 203,735
+2023-03-13 16:47:33 | epoch: 0000/100, training time: 383.7s, inference time: 13.2s
+train loss: 1.9878, test_loss: 1.8027
+test loss decrease from inf to 1.8027, saving model to ./data/ST_PEMS.pkl
+2023-03-13 16:54:08 | epoch: 0001/100, training time: 381.8s, inference time: 13.3s
+train loss: 1.7181, test_loss: 1.7181
+test loss decrease from 1.8027 to 1.7181, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:00:43 | epoch: 0002/100, training time: 381.4s, inference time: 13.3s
+train loss: 1.6168, test_loss: 1.7644
+2023-03-13 17:07:18 | epoch: 0003/100, training time: 382.0s, inference time: 13.2s
+train loss: 1.5550, test_loss: 1.6163
+test loss decrease from 1.7181 to 1.6163, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:13:53 | epoch: 0004/100, training time: 382.0s, inference time: 13.3s
+train loss: 1.5141, test_loss: 1.5951
+test loss decrease from 1.6163 to 1.5951, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:20:28 | epoch: 0005/100, training time: 381.7s, inference time: 13.3s
+train loss: 1.4713, test_loss: 1.5931
+test loss decrease from 1.5951 to 1.5931, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:27:04 | epoch: 0006/100, training time: 382.2s, inference time: 13.2s
+train loss: 1.4578, test_loss: 1.5795
+test loss decrease from 1.5931 to 1.5795, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:33:39 | epoch: 0007/100, training time: 382.4s, inference time: 13.2s
+train loss: 1.4455, test_loss: 1.5810
+2023-03-13 17:40:15 | epoch: 0008/100, training time: 382.5s, inference time: 13.2s
+train loss: 1.4354, test_loss: 1.5672
+test loss decrease from 1.5795 to 1.5672, saving model to ./data/ST_PEMS.pkl
+2023-03-13 17:46:51 | epoch: 0009/100, training time: 382.9s, inference time: 13.2s
+train loss: 1.4257, test_loss: 1.5848
+2023-03-13 17:53:28 | epoch: 0010/100, training time: 383.9s, inference time: 13.2s
+train loss: 1.4059, test_loss: 1.5678
+2023-03-13 18:00:04 | epoch: 0011/100, training time: 382.7s, inference time: 13.3s
+train loss: 1.4001, test_loss: 1.5615
+test loss decrease from 1.5672 to 1.5615, saving model to ./data/ST_PEMS.pkl
+2023-03-13 18:06:40 | epoch: 0012/100, training time: 382.3s, inference time: 13.3s
+train loss: 1.3955, test_loss: 1.5725
+2023-03-13 18:13:16 | epoch: 0013/100, training time: 382.9s, inference time: 13.3s
+train loss: 1.3906, test_loss: 1.5663
+2023-03-13 18:19:52 | epoch: 0014/100, training time: 382.9s, inference time: 13.3s
+train loss: 1.3856, test_loss: 1.5919
+2023-03-13 18:26:28 | epoch: 0015/100, training time: 382.9s, inference time: 13.3s
+train loss: 1.3743, test_loss: 1.5643
+2023-03-13 18:33:04 | epoch: 0016/100, training time: 382.5s, inference time: 13.2s
+train loss: 1.3710, test_loss: 1.5661
+2023-03-13 18:39:40 | epoch: 0017/100, training time: 382.5s, inference time: 13.2s
+train loss: 1.3687, test_loss: 1.5785
+2023-03-13 18:46:15 | epoch: 0018/100, training time: 382.4s, inference time: 13.2s
+train loss: 1.3659, test_loss: 1.5744
+2023-03-13 18:52:52 | epoch: 0019/100, training time: 383.0s, inference time: 13.3s
+train loss: 1.3634, test_loss: 1.5709
+2023-03-13 18:59:28 | epoch: 0020/100, training time: 383.7s, inference time: 13.2s
+train loss: 1.3558, test_loss: 1.5728
+2023-03-13 19:06:04 | epoch: 0021/100, training time: 382.2s, inference time: 13.3s
+train loss: 1.3540, test_loss: 1.5629
+2023-03-13 19:12:39 | epoch: 0022/100, training time: 381.9s, inference time: 13.2s
+train loss: 1.3525, test_loss: 1.5640
+2023-03-13 19:19:15 | epoch: 0023/100, training time: 382.2s, inference time: 13.2s
+train loss: 1.3510, test_loss: 1.5601
+
+**** testing model ****
+loading model from ST_PEMS_testbest_ez64_layer1_head8_epoch11_1.5615
+model restored!
+evaluating...
+testing time: 15.9s
+                MAE		RMSE		MAPE
+test             1.56		3.56		3.48%
+performance in each prediction step
+step: 01         0.91		1.63		1.77%
+step: 02         1.15		2.29		2.33%
+step: 03         1.32		2.78		2.77%
+step: 04         1.46		3.18		3.12%
+step: 05         1.55		3.46		3.40%
+step: 06         1.61		3.68		3.62%
+step: 07         1.68		3.84		3.81%
+step: 08         1.73		3.97		3.96%
+step: 09         1.77		4.07		4.10%
+step: 10         1.80		4.17		4.22%
+step: 11         1.84		4.24		4.31%
+step: 12         1.86		4.28		4.38%
+average:         1.56		3.47		3.48%
